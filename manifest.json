@@ -1,0 +1,243 @@
+{
+  "version": 1,
+  "locale": "de_DE.cp1252",
+  "metadata": {
+    "appmode": "python-dash",
+    "entrypoint": "./app.py"
+  },
+  "python": {
+    "version": "3.10.14",
+    "package_manager": {
+      "name": "pip",
+      "version": "25.1.1",
+      "package_file": "requirements.txt"
+    }
+  },
+  "files": {
+    "requirements.txt": {
+      "checksum": "802b455b06da8415c63934569e9c15e7"
+    },
+    ".github/workflows/publish_example_data.yaml": {
+      "checksum": "6f7aa2173bd33dd08c2a7f2eb356e85c"
+    },
+    ".gitignore": {
+      "checksum": "d73334fa79f9b797f9fb5116681f788d"
+    },
+    "CODEOWNERS": {
+      "checksum": "39d329afdeb7d08624ea031c5cb98ce2"
+    },
+    "CONTRIBUTING.md": {
+      "checksum": "f8801ec36fc04bce6c87eb1c5209c69b"
+    },
+    "LICENSE.txt": {
+      "checksum": "b9cb9bac9fd93dc822169ce51a92cb6b"
+    },
+    "README.md": {
+      "checksum": "293d2dfbac1e465d7290905adca08126"
+    },
+    "TODO.txt": {
+      "checksum": "ed4cd78bfd812f3b1c05f3960c826af5"
+    },
+    "app.py": {
+      "checksum": "a3a3939c2d98f56c45ddf69ae7476872"
+    },
+    "app.spec": {
+      "checksum": "185dec2aa1f94859c95c8295e60777ab"
+    },
+    "assets/bayer_logo.png": {
+      "checksum": "deade414aea93583e21c79a2b28ce899"
+    },
+    "assets/common.css": {
+      "checksum": "703ff698a7061b21c1cba315b34d5d8a"
+    },
+    "assets/favicon.ico": {
+      "checksum": "daf1b42b0753974afce3e9d597578f66"
+    },
+    "assets/icon.png": {
+      "checksum": "801185095a91c4743c34f9491eeb7ab3"
+    },
+    "assets/mocca_framed.png": {
+      "checksum": "6a68bb29c51c9af79f7dde1d4b63feb1"
+    },
+    "cache/__init__.py": {
+      "checksum": "89da609569b691670a309b77c61bc758"
+    },
+    "cache/classes.py": {
+      "checksum": "e26d236343a510ef5949325847cc83ac"
+    },
+    "cache/files.py": {
+      "checksum": "cffe2c4cdf153acaa6821865bdb68dab"
+    },
+    "cache/global_vars.py": {
+      "checksum": "14449ffeafc7b0760d4edb32a05098ec"
+    },
+    "cache/uploading_files.py": {
+      "checksum": "99a92f2a5ef96204758af2e7c74da328"
+    },
+    "campaign/__init__.py": {
+      "checksum": "24bbc9267e69366c171e48b320e755f2"
+    },
+    "campaign/builder.py": {
+      "checksum": "b598e751caf0d9cb82fcbcdc4417b426"
+    },
+    "campaign/loader.py": {
+      "checksum": "43bdf7543b419d54cb286c05ae0daca6"
+    },
+    "campaign/pickling.py": {
+      "checksum": "9d208cd46f1c26210b1ebead3194ea5f"
+    },
+    "example_data/README.md": {
+      "checksum": "6e2d19c91dd7719e276216d188ab9b84"
+    },
+    "example_data/calibration/2022-03-24_12-08-57_050_grad.csv": {
+      "checksum": "61a853367bf3ef1f625b61d94c56a7ba"
+    },
+    "example_data/calibration/2022-03-24_12-25-03_050_ba_100.csv": {
+      "checksum": "d5b7ffd663274f37baeddf815f0bd469"
+    },
+    "example_data/calibration/2022-03-24_13-40-18_050_ome_100.csv": {
+      "checksum": "afe11063c651365fdec58d95372c8281"
+    },
+    "example_data/calibration/2022-03-24_14-55-31_050_nme2_100.csv": {
+      "checksum": "6d62da88005c4de2d925ccf2444543d4"
+    },
+    "example_data/reaction_ba_ome_nme2/2022-03-25_15-56-08_050_grad.csv": {
+      "checksum": "51948380006d7aebbd9eddcea3d92746"
+    },
+    "example_data/reaction_ba_ome_nme2/2022-03-25_16-11-38_050_ba_ome_nme2.csv": {
+      "checksum": "6f55c8924a844738148c12b96fed3156"
+    },
+    "example_data/reaction_ba_ome_nme2/2022-03-25_16-29-53_050_ba_ome_nme2.csv": {
+      "checksum": "a4d563612cd13fe1c71c509fa4ed3ede"
+    },
+    "example_data/reaction_ba_ome_nme2/2022-03-25_16-48-07_050_ba_ome_nme2.csv": {
+      "checksum": "ed0892c4f03c1592895fdd178f2efd71"
+    },
+    "example_data/reaction_ba_ome_nme2/2022-03-25_17-06-23_050_ba_ome_nme2.csv": {
+      "checksum": "4042e3fa15eaed7d166a21d0677b287a"
+    },
+    "example_data/reaction_ba_ome_nme2/2022-03-25_17-24-35_050_ba_ome_nme2.csv": {
+      "checksum": "f167873b356a786dca4155a75d236a22"
+    },
+    "example_data/reaction_ba_ome_nme2/2022-03-25_17-42-48_050_ba_ome_nme2.csv": {
+      "checksum": "3f63ca90e6815dc43ee5b24bd0253542"
+    },
+    "example_data/reaction_ba_ome_nme2/2022-03-25_18-01-02_050_ba_ome_nme2.csv": {
+      "checksum": "73b54b59e6df0c6a6c61957052ede39a"
+    },
+    "example_data/reaction_ba_ome_nme2/2022-03-25_18-19-15_050_ba_ome_nme2.csv": {
+      "checksum": "7007963d78073eae4c69b4c1c51c9b77"
+    },
+    "example_data/reaction_ba_ome_nme2/2022-03-25_18-37-30_050_ba_ome_nme2.csv": {
+      "checksum": "ed83d5033e6defd783bebb6f34d043c7"
+    },
+    "example_data/reaction_ba_ome_nme2/2022-03-25_18-55-44_050_ba_ome_nme2.csv": {
+      "checksum": "c22acc51ba1a289d2608ff68317cb55b"
+    },
+    "literature.txt": {
+      "checksum": "99ef811614d29fd0fb99388980fcdbc1"
+    },
+    "pages/__init__.py": {
+      "checksum": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "pages/base_layout/__init__.py": {
+      "checksum": "9085263b34ed5d9fcc96e123bd574a18"
+    },
+    "pages/base_layout/layout_navbar.py": {
+      "checksum": "a64ca41f869911cc53adeb701c6498b6"
+    },
+    "pages/data/__init__.py": {
+      "checksum": "e5b4438977e984efbb4fb975a7f395eb"
+    },
+    "pages/data/callbacks.py": {
+      "checksum": "ffdb33849830d600ebd4685065a94e24"
+    },
+    "pages/data/layout.py": {
+      "checksum": "789e1741f736dd2d7c84e439d68ce49a"
+    },
+    "pages/home/__init__.py": {
+      "checksum": "8f71ab923591a1229cefcb34e72dce6c"
+    },
+    "pages/home/description_text.py": {
+      "checksum": "00250924695bd97457c5fce6a98d09b4"
+    },
+    "pages/home/layout.py": {
+      "checksum": "cf8da8cd64691575d7f65d07191cd2dc"
+    },
+    "pages/process/__init__.py": {
+      "checksum": "d189b6f38c89d992506aafc49d245ae6"
+    },
+    "pages/process/callbacks.py": {
+      "checksum": "2440933f76b4bf42ca20410666528505"
+    },
+    "pages/process/layout.py": {
+      "checksum": "29cd9cf0a7583f89c08f3db020518105"
+    },
+    "pages/process/layout_chrom_preview.py": {
+      "checksum": "bcc135c4f538da8d950c408484047bd1"
+    },
+    "pages/process/layout_settings_description.py": {
+      "checksum": "60faaa18df358acbe8213364c231f132"
+    },
+    "pages/process/process_single.py": {
+      "checksum": "7eebe8370a85657701243fdade5db3f5"
+    },
+    "pages/results/__init__.py": {
+      "checksum": "99235567f19c56dca6048c22e6dd364a"
+    },
+    "pages/results/callbacks.py": {
+      "checksum": "fc8517be603853f4cacc159a7d160841"
+    },
+    "pages/results/callbacks_compounds.py": {
+      "checksum": "d3aba578e11603c6adaf10cb194e7755"
+    },
+    "pages/results/callbacks_concs.py": {
+      "checksum": "926143e74a414ad478bf952fa7678b00"
+    },
+    "pages/results/callbacks_copy.py": {
+      "checksum": "77c0950657128513b6106e824ba93743"
+    },
+    "pages/results/callbacks_integrals.py": {
+      "checksum": "13949d016c1fde3c6d81f11a74810f17"
+    },
+    "pages/results/layout.py": {
+      "checksum": "107f09f43a0765d79842618e692f17d0"
+    },
+    "pages/results/layout_chrom_fig.py": {
+      "checksum": "1a8f6f9d7390bab4e58d8986a399d078"
+    },
+    "pages/results/layout_chromatogram.py": {
+      "checksum": "aa167387bd6c3ab37c93fe046444f8bd"
+    },
+    "pages/results/layout_compounds.py": {
+      "checksum": "cb776edfcf35e8a4918fff46e4e5be20"
+    },
+    "pages/results/layout_table_concs.py": {
+      "checksum": "7937431562651fd7a8822a4a42d24d94"
+    },
+    "pages/results/layout_table_integrals.py": {
+      "checksum": "d311c8489b4e81c32e5b0d205c641722"
+    },
+    "run.bat": {
+      "checksum": "f1a3b455790ffe141e817a31eaf61263"
+    },
+    "tutorial_screenshots/excel.png": {
+      "checksum": "888fd7c7c66d4c3b6a4721f752ea0ee7"
+    },
+    "tutorial_screenshots/home_page.png": {
+      "checksum": "44c787e064a9b5455470c494cf34f1ed"
+    },
+    "tutorial_screenshots/process_page.png": {
+      "checksum": "10abeac31888173d45d977312034e958"
+    },
+    "tutorial_screenshots/results_chromatogram.png": {
+      "checksum": "3c95e3272941ba1b2d2902e1c39dcb13"
+    },
+    "tutorial_screenshots/results_concentrations.png": {
+      "checksum": "d026294018fbea23ad8df0db3f01abf6"
+    },
+    "tutorial_screenshots/upload_page.png": {
+      "checksum": "618d950f7ef4912fc3ccd1d6c14ba9a8"
+    }
+  }
+}
