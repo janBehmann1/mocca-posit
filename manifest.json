@@ -3,7 +3,7 @@
   "locale": "de_DE.cp1252",
   "metadata": {
     "appmode": "python-dash",
-    "entrypoint": "./app.py"
+    "entrypoint": "app.py"
   },
   "python": {
     "version": "3.10.14",
