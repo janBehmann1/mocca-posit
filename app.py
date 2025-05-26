@@ -51,34 +51,27 @@ CACHE_DIR = "_cache"
 import cache
 import campaign
 
-import pages
-import pages.base_layout
-import pages.home
-import pages.data
-import pages.process
-import pages.results
 
-
-# create callback for loading content for different URL paths
-@app.callback(
-    dash.dependencies.Output("page-content", "children"),
-    [dash.dependencies.Input("url", "pathname")],
-)
-def display_page(pathname: str):
-    """
-    When URL changes, the content of `div#page-content` is updated accordingly
-    """
-    if pathname in ["", "/", "/home"]:
-        return pages.home.get_layout()
-    elif pathname == "/data":
-        return pages.data.get_layout()
-    elif pathname == "/process":
-        return pages.process.get_layout()
-    elif pathname == "/results":
-        return pages.results.get_layout()
-    else:
-        # TODO: add page not found page
-        return None
+# # create callback for loading content for different URL paths
+# @app.callback(
+#     dash.dependencies.Output("page-content", "children"),
+#     [dash.dependencies.Input("url", "pathname")],
+# )
+# def display_page(pathname: str):
+#     """
+#     When URL changes, the content of `div#page-content` is updated accordingly
+#     """
+#     if pathname in ["", "/", "/home"]:
+#         return pages.home.get_layout()
+#     elif pathname == "/data":
+#         return pages.data.get_layout()
+#     elif pathname == "/process":
+#         return pages.process.get_layout()
+#     elif pathname == "/results":
+#         return pages.results.get_layout()
+#     else:
+#         # TODO: add page not found page
+#         return None
 
 from dash import html, dcc # type: ignore
 
@@ -100,16 +93,43 @@ def get_layout() -> html.Div:
                     'align-items': 'normal'
                 })
         ])
+
+def get_multipage_layout():
+    layout = html.Div([
+    html.H1('Multi-page app with Dash Pages'),
+    html.Div(
+        [
+            html.Div(
+                dcc.Link(
+                    f"{page['name']} - {page['path']}",
+                    href=page["relative_path"]
+                )
+            )
+            for page in dash.page_registry.values()
+        ]
+    ),
+    dash.page_container
+    ])
+    return layout
 # start the server
 if __name__ == "__main__":
     # initialize global variables and file caching
     cache.init()
 
+    import pages
+    import pages.base_layout
+    import pages.home
+    import pages.data
+    #import pages.process
+    #import pages.results
+
+    print(dash.page_registry)
     # load the base layout
-    app.layout = get_layout()
+    app.layout = get_multipage_layout()
 
     webbrowser.open("http://localhost:8050")
     app.run(host="127.0.0.1", debug=False, port=8050)
     #server= app.server
+    print(dash.page_registry)
     #server.run(debug=True)
     
