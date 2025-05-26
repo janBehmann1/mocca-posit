@@ -78,15 +78,35 @@ def display_page(pathname: str):
         # TODO: add page not found page
         return None
 
+from dash import html, dcc # type: ignore
 
+from pages.base_layout.layout_navbar import navbar
+
+def get_layout() -> html.Div:
+    """Returns the basic layout shared by all pages"""
+    return html.Div(
+        id="outermost-wrapper",
+        children=[
+            dcc.Location(id='url', refresh=False),
+            navbar(),
+            html.Div(
+                id="page-content",
+                className="px-5 pb-5 pt-3",
+                style={
+                    'display': 'flex',
+                    'flex-flow': 'column',
+                    'align-items': 'normal'
+                })
+        ])
 # start the server
 if __name__ == "__main__":
     # initialize global variables and file caching
     cache.init()
 
     # load the base layout
-    app.layout = pages.base_layout.get_layout()
+    app.layout = get_layout()
 
-    webbrowser.open("http://localhost:8050")
+    #webbrowser.open("http://localhost:8050")
     #app.run(host="127.0.0.1", debug=False, port=8050)
-    app.run_server()
+    app.run(debug=True)
+    
