@@ -30,6 +30,8 @@ app = dash.Dash(
     external_stylesheets=external_stylesheets,
     external_scripts=external_scripts,
     title="Mocca",
+    use_pages=True,
+    suppress_callback_exceptions=True,
 )
 server = app.server
 
@@ -80,7 +82,7 @@ def display_page(pathname: str):
 
 from dash import html, dcc # type: ignore
 
-#from pages.base_layout.layout_navbar import navbar
+from pages.base_layout.layout_navbar import navbar
 
 def get_layout() -> html.Div:
     """Returns the basic layout shared by all pages"""
@@ -88,7 +90,7 @@ def get_layout() -> html.Div:
         id="outermost-wrapper",
         children=[
             dcc.Location(id='url', refresh=False),
-            #navbar(),
+            navbar(),
             html.Div(
                 id="page-content",
                 className="px-5 pb-5 pt-3",
@@ -106,8 +108,8 @@ if __name__ == "__main__":
     # load the base layout
     app.layout = get_layout()
 
-    #webbrowser.open("http://localhost:8050")
-    #app.run(host="127.0.0.1", debug=False, port=8050)
-    server= app.server
-    server.run(debug=True)
+    webbrowser.open("http://localhost:8050")
+    app.run(host="127.0.0.1", debug=False, port=8050)
+    #server= app.server
+    #server.run(debug=True)
     
