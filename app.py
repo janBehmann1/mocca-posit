@@ -127,9 +127,9 @@ if __name__ == "__main__":
     # load the base layout
     app.layout = get_multipage_layout()
 
-    webbrowser.open("http://localhost:8050")
-    app.run(host="127.0.0.1", debug=False, port=8050)
+    #webbrowser.open("http://localhost:8050")
+    #app.run(host="127.0.0.1", debug=False, port=8050)
     #server= app.server
     print(dash.page_registry)
-    #server.run(debug=True)
+    server.run(debug=True)
     
