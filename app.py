@@ -109,7 +109,4 @@ if __name__ == "__main__":
     #webbrowser.open("http://localhost:8050")
     #app.run(host="127.0.0.1", debug=False, port=8050)
     app.run(debug=True)
-<<<<<<< HEAD
     
-=======
->>>>>>> db77f2f8ecd0b9b73297f8a9b60009484b0ada1f
